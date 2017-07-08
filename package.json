@@ -1,0 +1,30 @@
+{
+  "name": "todo2",
+  "version": "1.2.1",
+  "description": "Faster, single-page version with bootstrap",
+  "main": "app.js",
+  "scripts": {
+    "test": "run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://brandonpwood/TODO.git"
+  },
+  "keywords": [
+    "bootstrap",
+    "socket.io",
+    "mongoose",
+    "mongodb",
+    "node",
+    "todo",
+    "list"
+  ],
+  "author": "Brandon Wood",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "client-sessions": "^0.8.0",
+    "express": "^4.15.3",
+    "mongoose": "^4.11.1"
+  }
+}
