@@ -1,6 +1,43 @@
+// Draw todo lists.
+function draw(todos){
+  if(todos){
+    $('.todo').html('');
+    
+  }
+}
+
+// Call for data if available.
+function data(){
+  $.ajax({
+    type: 'POST',
+    url: '/data',
+    success: function(response , stats){
+      if(response){
+
+      }
+    }
+  });
+}
+
 // Sending account creation requests.
 function send(form){
-  console.log("wow");
+  var data = {
+    username: form.username.value,
+    password: form.pw1.value
+  };
+
+  $.ajax({
+  type: 'POST',
+  url: '/createaccount',
+  data: data,
+  success: function(response, status){
+    if(response === 'Success!'){
+
+    }else{
+      alert(status)
+    }
+  }
+  });
 }
 
 
@@ -29,7 +66,7 @@ $('.account-form').validate({
     send(form);
   },
   errorElement: 'small',
-  errorClass: "text-danger",
+  errorClass: 'text-danger',
   debug: true,
   rules: {
     username:{

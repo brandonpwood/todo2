@@ -12,35 +12,12 @@
 
   </head>
   <body>
-    <!-- <nav class="navbar navbar-toggleable-md navbar-inverse bg-info navbar-fixed-top">
-
-        <button class="navbar-toggler navbar-toggler-right" type = "button" data-toggle="collapse" data-target="#mainNav">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <a class = "navbar-brand">Todo2</a>
-
-        <div class = "collapse navbar-collapse" id = "mainNav">
-          <ul class = "navbar-nav mr-auto">
-            <li>
-              <a class = "nav-item nav-link" href = "#">Test</a>
-            </li>
-            <li>
-              <a class = "nav-item nav-link" href = "#">That</a>
-            </li>
-            <li>
-              <a class = "nav-item nav-link" href = "#">Code</a>
-            </li>
-          </ul>
-        </div>
-    </nav> -->
-
 
     <div class = "jumbotron jumbotron-fixed bg-info text-white">
       <div class = "container container-fixed">
         <center>
           <h1 class = "display-3">Todo 2</h1>
-          <p class = "lead">A lightweight todo app to stay productive.</p>
+          <p class = "lead">A lightweight todo app for staying productive.</p>
         </center>
       </div>
     </div>
@@ -76,37 +53,37 @@
           <div class = 'modal-header'>
             <h4 class = "modal-title">Become a productivity master</h4>
           </div>
-          <div class = "modal-body">
-            <p class = "lead">
-              We'll just need a username and a password.
-            </p>
-              <form class = "account-form">
+          <form class = "account-form" action = "/wow" method = "post">
+            <div class = "modal-body">
+              <p class = "lead">
+                We'll just need a username and a password.
+              </p>
 
-              <div class = "form-group">
-                <label for = "username">Username</label>
-                <input type = "text" class = "form-control form-control-danger" id = "username" name = "username" described-by = "username"/>
-                <small class = "text-muted" id = "usernamelabel">Must be between 6 and 16 characters and not taken.</small>
-              </div>
+                <div class = "form-group">
+                  <label for = "username">Username</label>
+                  <input type = "text" class = "form-control form-control-danger" id = "username" name = "username" described-by = "username" value = "testtest"/>
+                  <small class = "text-muted" id = "usernamelabel">Must be between 6 and 16 characters and not taken.</small>
+                </div>
 
 
-              <div class = "form-group">
+                <div class = "form-group">
 
-                <label for = "pw1">Password</label>
-                <input type = "password" class = "form-control" id = "pw1" name = "pw1" described-by = "pw1"/>
-                <small class = "text-muted" id = "pw1label">At least 8 characters long!</small>
-              </div>
+                  <label for = "pw1">Password</label>
+                  <input type = "password" class = "form-control" id = "pw1" name = "pw1" described-by = "pw1" value = "testtest"/>
+                  <small class = "text-muted" id = "pw1label">At least 8 characters long!</small>
+                </div>
 
-              <div class = "form-group">
-                <label for = "pw2">Confirm</label>
-                <input type = "password" class = "form-control" id = "pw2" name = "pw2" described-by = "pw2"/>
-                <small class = "text-muted" id = "pw2label"></small>
-              </div>
-            </form>
-          </div>
-          <div class = "modal-footer">
-            <button type= "submit" form = "account-form" class="btn btn-outline-success mr-auto">Submit</button>
-            <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Close</button>
-          </div>
+                <div class = "form-group">
+                  <label for = "pw2">Confirm</label>
+                  <input type = "password" class = "form-control" id = "pw2" name = "pw2" described-by = "pw2" value = "testtest"/>
+                  <small class = "text-muted" id = "pw2label"></small>
+                </div>
+            </div>
+            <div class = "modal-footer">
+              <button type= "submit" class = "btn btn-outline-success mr-auto">Submit</button>
+              <button type="button" class="btn btn-outline-danger" data-dismiss = "modal">Close</button>
+            </div>
+          </form>
         </div>
       </div>
     </div>
@@ -129,7 +106,7 @@
                 <br />
 
                 <label for = "pw1">Password</label>
-                <input type = "text" class = "form-control" id = "pw1"/>
+                <input type = "password" class = "form-control" id = "pw1"/>
               </div>
             </form>
           </div>
@@ -142,9 +119,67 @@
     </div>
 
     <hr />
+
+    <div class = "modal fade" id = "contact-us" role = "dialog">
+      <div class = "modal-dialog" role = "document">
+        <div class = "modal-content">
+          <div class = "modal-header">
+            <h1 class = "display-4">Contact Us</h1>
+          </div>
+          <div class = "modal-body">
+            <div class = "card-group">
+              <div class = "card">
+                <!-- <img class = "img-rounded" src = './../images/Brandon.jpg' /> -->
+                <div class = "card-block">
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class = "modal-footer">
+            <button class = "btn btn-outline-danger" data-dismiss = "modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class = "modal fade" id = "about-us" role = "dialog">
+      <div class = "modal-dialog" role = "document">
+        <div class = "modal-content">
+          <div class = "modal-header">
+            <h1 class = "display-4">Abouts Us</h1>
+          </div>
+          <div class = "modal-body">
+            <h3>What is Todo 2?</h3>
+            <p class = "lead">
+              Todo 2 is a revolutionary todo app that will fundamentally synergize the way big data analytics controls productivity flow.
+              By operating in a lightweight, mobile-first bootstrap envirnonment, this single page web app was build with the philosophy
+              that it would not only drive progress in todo app design, but all app kind.
+            </p>
+            <h3 class = "">Why now?</h3>
+            <p class = "lead">
+              Why did we think now was the time to release todo 2? We are
+              fortunate to be living in a time where machine learning, big
+              data analytics, and artificial intelligence are able to propel
+              productive synergies through stochastic heuristics and hyper-dimmensional
+              analysis. The only real question is: What took us so long?
+            </p>
+            <h3 class = "">How does it use big data?</h3>
+            <p class = "lead">
+              It doesn't.
+            </p>
+          </div>
+          <div class = "modal-footer">
+            <button class= "btn btn-outline-danger" data-dismiss = "modal">Close</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
     <nav class = "nav justify-content-center">
-          <a class = "nav-link " href = '#' id = "contact-us">Contact</a>
-          <a class = "nav-link " href = '#' id = "about-us"> About us</a>
+      <a class = "nav-link " href = '#' id = "contact-us" data-toggle = "modal" data-target = "#contact-us">Contact</a>
+      <a class = "nav-link " href = '#' id = "about-us" data-toggle = "modal" data-target = "#about-us"> About us</a>
     </nav>
 
     <script src = "https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

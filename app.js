@@ -41,7 +41,7 @@ app.use(function(req, res, next){
     User.findOne({username: req.session.user.username}, function(err, user){
       if(user && !err){
         req.user = user;
-        delete req.user.password;
+        delete req.user.todos;
         req.session.user = user;
       }
       next();
